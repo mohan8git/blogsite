@@ -28,7 +28,7 @@ const HomePage = () => {
             key="1"
             type="primary"
             onClick={() => {
-              navigate("/create");
+              navigate("/blogsite/blog-create");
             }}
           >
             Create Blog

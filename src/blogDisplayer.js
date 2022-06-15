@@ -12,7 +12,7 @@ const BlogDisplayer = ({ key, blog, deleteBlog }) => {
         <div>
           <Button
             onClick={() =>
-              navigate("/create", { state: { editMode: true, key: blog?.id } })
+              navigate("/blogsite/blog-create", { state: { editMode: true, key: blog?.id } })
             }
           >
             Edit
