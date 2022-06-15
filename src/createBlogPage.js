@@ -42,7 +42,7 @@ const CreateBlogPage = () => {
       newBlogData[index].content = content;
       newBlogData[index].imgUrl = imgUrl;
       localStorage.setItem("blogData", JSON.stringify(newBlogData));
-      navigate("/");
+      navigate("/blogsite");
       return;
     }
     const newBlog = {
@@ -54,7 +54,7 @@ const CreateBlogPage = () => {
     const tempBlogData = JSON.parse(localStorage.getItem("blogData")) || [];
     tempBlogData.push(newBlog);
     localStorage.setItem("blogData", JSON.stringify(tempBlogData));
-    navigate("/");
+    navigate("/blogsite");
   };
   useEffect(() => {
     //read state from navigate
