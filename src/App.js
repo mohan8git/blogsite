@@ -7,6 +7,7 @@ function App() {
     <>
     <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/blogsite" element={<HomePage />} />
         <Route path="/create" element={<CreateBlogPage />} />
     </Routes>
      
